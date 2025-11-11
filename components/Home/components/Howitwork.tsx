@@ -79,7 +79,7 @@ const HowItWorks = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">How It Works</h2>
-                    <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+                    <p className="text-[#757575] text-base md:text-lg max-w-2xl mx-auto">
                         Start earning in 4 simple steps. Join thousands of successful affiliates already making money with CareWall.
                     </p>
                 </div>
@@ -98,7 +98,7 @@ const HowItWorks = () => {
                                         <IconComponent className={`w-6 h-6 ${step.iconColor}`} />
                                     </div>
                                     <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
-                                    <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
+                                    <p className="text-[#757575] text-sm leading-relaxed">{step.description}</p>
                                 </div>
                             </div>
                         )
