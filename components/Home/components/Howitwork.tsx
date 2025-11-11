@@ -28,6 +28,8 @@ const HowItWorks = () => {
             description:
                 "Create your affiliate account in minutes. No fees, no commitments. Get instant access to your dashboard and marketing materials.",
             icon: Users,
+            iconColor: "text-blue-500",
+            bgColor: "bg-blue-100",
         },
         {
             number: "02",
@@ -35,6 +37,8 @@ const HowItWorks = () => {
             description:
                 "Access thousands of products and get custom tracking links. Share products that match your audience interests.",
             icon: Link2,
+            iconColor: "text-green-500",
+            bgColor: "bg-green-100",
         },
         {
             number: "03",
@@ -42,6 +46,8 @@ const HowItWorks = () => {
             description:
                 "Share your links on your blog, social media, YouTube, or email. We provide banners, product feeds, and promotional content.",
             icon: Share2,
+            iconColor: "text-purple-500",
+            bgColor: "bg-purple-100",
         },
         {
             number: "04",
@@ -49,17 +55,19 @@ const HowItWorks = () => {
             description:
                 "Earn up to 30% commission on every sale. Track your earnings in real-time and get paid monthly via bank transfer or PayPal.",
             icon: Wallet,
+            iconColor: "text-orange-500",
+            bgColor: "bg-orange-100",
         },
     ]
 
     return (
-        <div className="w-full py-16 md:py-24 flex flex-col gap-24" id="how-it-works">
+        <div className="w-full py-16 md:py-24 flex flex-col gap-24">
             {/* Stats Section */}
             <div className="px-8 md:px-24 flex justify-center items-center">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl">
                     {stats.map((stat, index) => (
                         <div key={index} className="text-center">
-                            <p className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</p>
+                            <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{stat.value}</p>
                             <p className="text-sm md:text-base text-gray-600">{stat.label}</p>
                         </div>
                     ))}
@@ -67,7 +75,7 @@ const HowItWorks = () => {
             </div>
 
             {/* How It Works Section */}
-            <div className="px-8 md:px-24 py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 rounded-3xl mx-8 md:mx-24">
+            <div className="px-8 md:px-24 py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 rounded-3xl rounded-3xl mx-8 md:mx-24">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">How It Works</h2>
@@ -84,8 +92,8 @@ const HowItWorks = () => {
                             <div key={index} className="flex gap-6">
                                 <div className="flex flex-col items-center">
                                     <span className="text-3xl md:text-4xl font-bold text-gray-300 mb-4">{step.number}</span>
-                                    <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
-                                        <IconComponent className="w-6 h-6 text-white" />
+                                    <div className={`w-12 h-12 rounded-full ${step.bgColor} flex items-center justify-center`}>
+                                        <IconComponent className={`w-6 h-6 ${step.iconColor}`} />
                                     </div>
                                 </div>
                                 <div className="flex-1">

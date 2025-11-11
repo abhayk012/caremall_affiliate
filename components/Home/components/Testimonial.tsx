@@ -118,7 +118,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-12 md:py-16 bg-white" id="success-stories">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className=" mx-auto px-4 md:px-24">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-900">What Our Users Say</h2>
 
         <div className="relative overflow-hidden mb-8">
