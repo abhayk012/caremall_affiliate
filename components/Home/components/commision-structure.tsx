@@ -51,7 +51,7 @@ const CommissionStructure = () => {
   ]
 
   return (
-    <section className="py-20 px-4 md:px-24 bg-white">
+    <section className="py-20 px-4 md:px-24 bg-white" id="commissions">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

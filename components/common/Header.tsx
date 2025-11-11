@@ -24,19 +24,19 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center gap-8">
             <Link
-              href="/#how-it-works"
+              href="#how-it-works"
               className="text-base font-medium text-gray-700 hover:text-red-600 transition-colors"
             >
               How it Works
             </Link>
             <Link
-              href="/#commissions"
+              href="#commissions"
               className="text-base font-medium text-gray-700 hover:text-red-600 transition-colors"
             >
               Commissions
             </Link>
             <Link
-              href="/#success-stories"
+              href="#success-stories"
               className="text-base font-medium text-gray-700 hover:text-red-600 transition-colors"
             >
               Success Stories
@@ -44,12 +44,12 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="/login">
+            <Link href="/">
               <Button variant="ghost" className="text-gray-700 hover:text-red-600">
                 Login
               </Button>
             </Link>
-            <Link href="/signup">
+            <Link href="/">
               <Button className="bg-red-600 hover:bg-red-700 text-white">Create an Account</Button>
             </Link>
           </div>

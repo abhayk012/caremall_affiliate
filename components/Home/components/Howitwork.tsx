@@ -53,7 +53,7 @@ const HowItWorks = () => {
     ]
 
     return (
-        <div className="w-full py-16 md:py-24 flex flex-col gap-24">
+        <div className="w-full py-16 md:py-24 flex flex-col gap-24" id="how-it-works">
             {/* Stats Section */}
             <div className="px-8 md:px-24 flex justify-center items-center">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl">
