@@ -28,8 +28,8 @@ const HowItWorks = () => {
             description:
                 "Create your affiliate account in minutes. No fees, no commitments. Get instant access to your dashboard and marketing materials.",
             icon: Users,
-            iconColor: "text-blue-500",
-            bgColor: "bg-blue-100",
+            iconColor: "text-[#A190FF]",
+            bgColor: "bg-[#A190FF33]",
         },
         {
             number: "02",
@@ -37,8 +37,8 @@ const HowItWorks = () => {
             description:
                 "Access thousands of products and get custom tracking links. Share products that match your audience interests.",
             icon: Link2,
-            iconColor: "text-green-500",
-            bgColor: "bg-green-100",
+            iconColor: "text-[#418DFF]",
+            bgColor: "bg-[#418DFF33]",
         },
         {
             number: "03",
@@ -46,8 +46,8 @@ const HowItWorks = () => {
             description:
                 "Share your links on your blog, social media, YouTube, or email. We provide banners, product feeds, and promotional content.",
             icon: Share2,
-            iconColor: "text-purple-500",
-            bgColor: "bg-purple-100",
+            iconColor: "text-[#FF4D00]",
+            bgColor: "bg-[#FF4D0033]",
         },
         {
             number: "04",
@@ -55,8 +55,8 @@ const HowItWorks = () => {
             description:
                 "Earn up to 30% commission on every sale. Track your earnings in real-time and get paid monthly via bank transfer or PayPal.",
             icon: Wallet,
-            iconColor: "text-orange-500",
-            bgColor: "bg-orange-100",
+            iconColor: "text-[#14AE5C]",
+            bgColor: "bg-[#14AE5C33]",
         },
     ]
 
@@ -89,14 +89,14 @@ const HowItWorks = () => {
                     {steps.map((step, index) => {
                         const IconComponent = step.icon
                         return (
-                            <div key={index} className="flex gap-6">
-                                <div className="flex flex-col items-center">
-                                    <span className="text-3xl md:text-4xl font-bold text-gray-300 mb-4">{step.number}</span>
-                                    <div className={`w-12 h-12 rounded-full ${step.bgColor} flex items-center justify-center`}>
-                                        <IconComponent className={`w-6 h-6 ${step.iconColor}`} />
-                                    </div>
+                            <div key={index} className="flex gap-2">
+                                <div className="">
+                                    <span className="text-3xl md:text-4xl font-bold text-gray-300 mb-4">{step.number}.</span>
                                 </div>
                                 <div className="flex-1">
+                                    <div className={`w-12 h-12 rounded-md ${step.bgColor} flex items-center justify-center`}>
+                                        <IconComponent className={`w-6 h-6 ${step.iconColor}`} />
+                                    </div>
                                     <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
                                     <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
                                 </div>
