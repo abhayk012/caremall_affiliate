@@ -1,0 +1,111 @@
+import { Button } from "@/components/ui/button"
+import { Users, Link2, Share2, Wallet } from "lucide-react"
+
+const HowItWorks = () => {
+    const stats = [
+        {
+            value: "₹1.5 M+",
+            label: "Paid to Affiliates in 2024",
+        },
+        {
+            value: "10,000+",
+            label: "Active Affiliates Partners",
+        },
+        {
+            value: "10K+",
+            label: "Products Available",
+        },
+        {
+            value: "4.4/5",
+            label: "Affiliate Rating",
+        },
+    ]
+
+    const steps = [
+        {
+            number: "01",
+            title: "Sign Up For Free",
+            description:
+                "Create your affiliate account in minutes. No fees, no commitments. Get instant access to your dashboard and marketing materials.",
+            icon: Users,
+        },
+        {
+            number: "02",
+            title: "Get Your Unique Links",
+            description:
+                "Access thousands of products and get custom tracking links. Share products that match your audience interests.",
+            icon: Link2,
+        },
+        {
+            number: "03",
+            title: "Promote & Share",
+            description:
+                "Share your links on your blog, social media, YouTube, or email. We provide banners, product feeds, and promotional content.",
+            icon: Share2,
+        },
+        {
+            number: "04",
+            title: "Earn Commissions",
+            description:
+                "Earn up to 30% commission on every sale. Track your earnings in real-time and get paid monthly via bank transfer or PayPal.",
+            icon: Wallet,
+        },
+    ]
+
+    return (
+        <div className="w-full py-16 md:py-24 flex flex-col gap-24">
+            {/* Stats Section */}
+            <div className="px-8 md:px-24 flex justify-center items-center">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl">
+                    {stats.map((stat, index) => (
+                        <div key={index} className="text-center">
+                            <p className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</p>
+                            <p className="text-sm md:text-base text-gray-600">{stat.label}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* How It Works Section */}
+            <div className="px-8 md:px-24 py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 rounded-3xl mx-8 md:mx-24">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">How It Works</h2>
+                    <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+                        Start earning in 4 simple steps. Join thousands of successful affiliates already making money with CareWall.
+                    </p>
+                </div>
+
+                {/* Steps Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                    {steps.map((step, index) => {
+                        const IconComponent = step.icon
+                        return (
+                            <div key={index} className="flex gap-6">
+                                <div className="flex flex-col items-center">
+                                    <span className="text-3xl md:text-4xl font-bold text-gray-300 mb-4">{step.number}</span>
+                                    <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                                        <IconComponent className="w-6 h-6 text-white" />
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-xl font-semibold text-white mb-3">{step.title}</h3>
+                                    <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+
+                {/* CTA Button */}
+                <div className="flex justify-center">
+                    <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-base font-medium rounded-md">
+                        Get Started Now
+                    </Button>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default HowItWorks
