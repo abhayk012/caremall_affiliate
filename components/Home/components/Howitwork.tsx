@@ -75,10 +75,13 @@ const HowItWorks = () => {
             </div>
 
             {/* How It Works Section */}
-            <div className="px-8 md:px-24 py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 rounded-3xl rounded-3xl mx-8 md:mx-24">
+            <div className="relative px-8 md:px-24 py-20 bg-[#0e0e0e] rounded-3xl mx-8 md:mx-24">
+                <div className="absolute bottom-0 left-0 w-[304px] h-[304px] bg-[#FF4141] opacity-30 blur-[120px] rounded-full"></div>
+                <div className="absolute top-0 right-0 w-[304px] h-[304px] bg-[#FF4141] opacity-30 blur-[120px] rounded-full"></div>
+
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">How It Works</h2>
+                    <h2 className="text-4xl md:text-4xl font-medium text-white mb-4">How It Works</h2>
                     <p className="text-[#757575] text-base md:text-lg max-w-2xl mx-auto">
                         Start earning in 4 simple steps. Join thousands of successful affiliates already making money with CareWall.
                     </p>
