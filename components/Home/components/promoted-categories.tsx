@@ -77,7 +77,8 @@ const PromoteCategories = () => {
                                 />
 
                                 {/* Category Name Overlay */}
-                                <div className="absolute bottom-[15px] left-1/2 -translate-x-1/2 bg-white text-gray-800 text-sm font-medium px-5 py-1.5 rounded-sm shadow-sm border border-gray-200">
+                                
+                                <div className="w-full mx-3 absolute bottom-[15px] left-1/2 -translate-x-1/2 bg-white text-gray-800 text-sm font-medium px-5 py-1.5 rounded-sm shadow-sm border border-gray-200">
                                     {category.name}
                                 </div>
                             </div>
